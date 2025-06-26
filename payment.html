@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pembayaran</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f9f9f9; }
+    header {
+      background-color: #000;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { margin: 0; font-size: 20px; }
+    .logout-btn {
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: calc(100vh - 70px);
+    }
+    .content img {
+      max-width: 250px;
+      margin-top: 20px;
+    }
+    .content h2 {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mathematics</h1>
+    <button class="logout-btn" onclick="logout()">Log-out</button>
+  </header>
+
+  <div class="content">
+    <h2>Yuk belajar Matematika!</h2>
+    <h3>Rp500.000 untuk akses selamanya</h3>
+    <img src="asset/qr2.png" alt="Kode QR Pembayaran" />
+  </div>
+
+  <script>
+    function logout() {
+      alert("Anda telah keluar.");
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>
+
+<p>Jika selesai membayar, hubungi nomor tersebut untuk mendapat akses edukasi. Terima kasih</p>
+
+<p class="petunjuk">
+   Ingin bertanya? Silakan hubungi nomor dibawah ini ya!
+  </p>
+
+<a href="https://wa.link/3kjjcb" target="_blank">
+    <p><button>Whatsapp</button></p></a>
+  
